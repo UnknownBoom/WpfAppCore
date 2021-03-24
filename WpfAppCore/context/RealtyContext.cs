@@ -16,7 +16,7 @@ namespace WpfAppCore.context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=session2;Trusted_Connection=True;");
+                optionsBuilder.UseMySQL("server=localhost;database=session2;user=root;password=root");
             }
         }
 
